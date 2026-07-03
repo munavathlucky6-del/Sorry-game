@@ -1,1 +1,20 @@
 
+! html>
+<html><head><meta charset="UTF-8"><title>Sorry ❤️</title>
+<style>
+body{font-family:Arial;background:#ffd6e7;text-align:center;padding:40px}
+.card{background:#fff;border-radius:20px;padding:25px;max-width:420px;margin:auto;box-shadow:0 4px 12px #999}
+button{padding:12px 22px;margin:10px;border:none;border-radius:12px;font-size:18px}
+#no{position:relative}
+</style></head><body>
+<div class="card">
+<h1>🥺 I'm Really Sorry ❤️</h1>
+<p>Please forgive me. Will you forgive me?</p>
+<button onclick="yes()">Yes 💖</button>
+<button id="no" onmouseover="move()">No 😜</button>
+<p id="msg"></p>
+</div>
+<script>
+function yes(){document.getElementById('msg').innerHTML='Yay! ❤️ Thank you! You made my day 🥹';}
+function move(){let b=document.getElementById('no');b.style.left=(Math.random()*200-100)+'px';b.style.top=(Math.random()*120-60)+'px';}
+</script></body></html>
