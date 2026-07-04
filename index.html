@@ -144,3 +144,53 @@ I'm truly sorry for hurting you.<br><br>
 Every moment without your smile feels incomplete.<br><br>
 
 I never wanted to make you sad.<br><br>
+I promise I'll understand you better, respect your feelings, and always try to make you smile.<br><br>
+
+You mean the world to me. ❤️🌹<br><br>
+
+Please forgive me and give me one more chance.<br><br>
+
+Forever Yours ❤️
+
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+function yes(){
+  document.getElementById("letter").style.display="block";
+
+  const music=document.getElementById("bgMusic");
+  music.play().catch(()=>{});
+
+  alert("Yay!! ❤️ Thank you Mounika 🥹🌹");
+}
+
+function move(){
+  let b=document.getElementById("no");
+  b.style.left=(Math.random()*220-110)+"px";
+  b.style.top=(Math.random()*180-90)+"px";
+}
+
+setInterval(function(){
+
+  let h=document.createElement("div");
+
+  h.className="heart";
+  h.innerHTML="❤️";
+  h.style.left=Math.random()*100+"vw";
+  h.style.fontSize=(20+Math.random()*20)+"px";
+
+  document.body.appendChild(h);
+
+  setTimeout(()=>h.remove(),6000);
+
+},300);
+
+</script>
+
+</body>
+</html>
