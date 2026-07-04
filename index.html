@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,29 +16,18 @@ justify-content:center;
 align-items:center;
 height:100vh;
 overflow:hidden;
-text-align:center;
 }
 
 .card{
-background:white;
-padding:25px;
+background:#fff;
+padding:30px;
 border-radius:20px;
-width:90%;
+text-align:center;
 max-width:400px;
 box-shadow:0 10px 30px rgba(0,0,0,.2);
 }
 
-img{
-width:140px;
-height:140px;
-border-radius:50%;
-object-fit:cover;
-border:5px solid pink;
-}
-
-h1{
-color:#ff4d88;
-}
+h1{color:#ff4d88;}
 
 button{
 padding:12px 24px;
@@ -58,50 +48,67 @@ background:#ddd;
 position:relative;
 }
 
-#msg{
+#letter{
+display:none;
 margin-top:20px;
-font-size:20px;
-color:#ff4d88;
-font-weight:bold;
+text-align:left;
+font-size:17px;
+line-height:1.6;
 }
 </style>
-
 </head>
 
 <body>
 
 <div class="card">
 
-<img src="mounika.jpg">
-
 <h1>Hey Mounika ❤️</h1>
 
 <p>
-I'm really sorry. 🥺<br>
-You mean everything to me.<br>
+I know I hurt you... 🥺<br>
 Will you forgive me?
 </p>
 
-<button id="yes" onclick="yes()">Yes 💖</button>
+<button id="yes" onclick="forgive()">Yes ❤️</button>
+<button id="no" onmouseover="move()">No 🙈</button>
 
-<button id="no" onmouseover="move()">No 😜</button>
+<div id="letter">
 
-<p id="msg"></p>
+<h2>💌 A Letter For You</h2>
+
+<p>
+Dear Mounika,<br><br>
+
+I'm truly sorry for hurting you.<br><br>
+
+You mean so much to me, and seeing you upset hurts me too.<br><br>
+
+I promise to become a better person, understand you more, and always respect your feelings.<br><br>
+
+Your smile is my favorite thing in the world. ❤️<br><br>
+
+Please forgive me and give me one more chance.<br><br>
+
+I Love You So Much Mounika ❤️🌹<br><br>
+
+Forever Yours ❤️
+</p>
+
+</div>
 
 </div>
 
 <script>
-
-function yes(){
-document.getElementById("msg").innerHTML="Yayyy!! ❤️ Thank you Mounika 🥹💖 I Love You So Much 🌹";
+function forgive(){
+document.getElementById("letter").style.display="block";
+alert("Yay! ❤️ Thank you Mounika 😍");
 }
 
 function move(){
-let btn=document.getElementById("no");
-btn.style.left=Math.random()*200-100+"px";
-btn.style.top=Math.random()*150-75+"px";
+let b=document.getElementById("no");
+b.style.left=(Math.random()*200-100)+"px";
+b.style.top=(Math.random()*150-75)+"px";
 }
-
 </script>
 
 </body>
