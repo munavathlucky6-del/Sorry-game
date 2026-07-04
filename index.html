@@ -1,1 +1,146 @@
-<audio src="gaali_vaaluga_lyrics_video_song__Agnyaathavaasi___Anu_Emmanuel___keerthy_Suresh___Pawan_Kalyan(720p)(1).mp3" controls autoplay loop></audio>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Mounika ❤️</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#ffd6e7,#fff0f5);
+overflow:hidden;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.card{
+width:90%;
+max-width:420px;
+background:#fff;
+padding:25px;
+border-radius:25px;
+box-shadow:0 10px 30px rgba(0,0,0,.25);
+text-align:center;
+position:relative;
+z-index:2;
+animation:pop 1s;
+}
+
+@keyframes pop{
+from{
+transform:scale(.6);
+opacity:0;
+}
+to{
+transform:scale(1);
+opacity:1;
+}
+}
+
+img{
+width:170px;
+height:170px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #ff4d88;
+box-shadow:0 0 20px pink;
+margin-bottom:15px;
+}
+
+h1{
+color:#ff2d75;
+margin-bottom:10px;
+}
+
+p{
+font-size:18px;
+margin:15px 0;
+}
+
+button{
+padding:12px 28px;
+font-size:18px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+margin:10px;
+transition:.3s;
+}
+
+#yes{
+background:#ff2d75;
+color:white;
+}
+
+#no{
+background:#ddd;
+position:relative;
+}
+
+#letter{
+display:none;
+margin-top:20px;
+text-align:left;
+line-height:1.7;
+max-height:250px;
+overflow:auto;
+}
+
+.heart{
+position:fixed;
+color:#ff4d88;
+font-size:24px;
+animation:float 6s linear infinite;
+}
+
+@keyframes float{
+0%{
+transform:translateY(100vh);
+opacity:1;
+}
+100%{
+transform:translateY(-120vh);
+opacity:0;
+}
+}
+</style>
+</head>
+
+<body>
+
+<audio id="bgMusic" loop>
+<source src="gaali_vaaluga_lyrics_video_song__Agnyaathavaasi___Anu_Emmanuel___keerthy_Suresh___Pawan_Kalyan(720p)(1).mp3" type="audio/mpeg">
+</audio>
+
+<div class="card">
+
+<img src="IMG-20260704-WA0001.jpg">
+
+<h1>Hey Mounika ❤️</h1>
+
+<p>I know I hurt you... 🥺<br>Will you forgive me?</p>
+
+<button id="yes" onclick="yes()">Yes ❤️</button>
+
+<button id="no" onmouseover="move()">No 🙈</button>
+
+<div id="letter">
+<h2>💌 A Letter For You</h2>
+
+<p>
+Dear Mounika ❤️,<br><br>
+
+I'm truly sorry for hurting you.<br><br>
+
+Every moment without your smile feels incomplete.<br><br>
+
+I never wanted to make you sad.<br><br>
